@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <script src="script.js" defer></script> -->
+    <script src="script_localStorage.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1><span>Focus on</span> Today</h1>
+    </header>
+    <main>
+      <div class="form-heading">
+        <h2>Today</h2>
+        <img src="./assets/Sun.png" alt="sun_image" />
+      </div>
+      <div class="progress-container">
+        <p class="progress-txt">Raise the bar by completing your goals!</p>
+        <div class="progress-bar">
+          <div class="progress"><span></span></div>
+        </div>
+        <p class="error-label">Please set all the 3 goals!</p>
+      </div>
+      <div class="goals-container">
+        <div class="goal">
+          <!-- <input type="radio" name="" id="goal-selector" /> -->
+          <div class="custom-checkbox">
+            <img src="./assets/tick.png" />
+          </div>
+          <input
+            type="text"
+            name="goal-txt"
+            id="first"
+            placeholder="Add new goal"
+          />
+        </div>
+        <div class="goal">
+          <!-- <input type="radio" name="" id="" /> -->
+          <div class="custom-checkbox">
+            <img src="./assets/tick.png" />
+          </div>
+          <input
+            type="text"
+            name="goal-txt"
+            id="second"
+            placeholder="Add new goal"
+          />
+        </div>
+        <div class="goal">
+          <!-- <input type="radio" name="" id="" /> -->
+          <div class="custom-checkbox">
+            <img src="./assets/tick.png" />
+          </div>
+          <input
+            type="text"
+            class="goal-input"
+            name="goal-txt"
+            id="third"
+            placeholder="Add new goal"
+          />
+        </div>
+      </div>
+      <div class="form-bottom">
+        <p>"Move one step ahead, today!"</p>
+        <p>Made with <span>&hearts;</span> by Nived Dwivedi</p>
+      </div>
+    </main>
+  </body>
+</html>

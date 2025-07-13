@@ -1,0 +1,248 @@
+body {
+  padding: 0;
+  margin: 0;
+  margin: 12px;
+  box-sizing: border-box;
+  min-height: 100vh;
+  /* background-color: rgb(245, 250, 248); */
+  background-color: rgb(72, 163, 0, 0.07);
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
+  font-family: "Poppins", sans-serif;
+  transition: 0.5s ease;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header span {
+  /* color: rgb(10, 192, 10); */
+  color: #48a300;
+}
+
+header h1 {
+  font-weight: 900;
+  /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+  /* color: rgb(121, 46, 46); */
+  font-size: 3rem;
+  color: #61481c;
+  /* transition: 0.7s ease; */
+}
+
+main {
+  /* display: flex; */
+  flex-direction: column;
+  background-color: #fbfbfb;
+  padding: 32px 42px;
+  margin: 0 auto;
+  border-radius: 12px;
+  box-shadow: 2px 1px 6px 1px #f5f5f5;
+  /* min-width: 200px; */
+  max-width: 600px;
+  /* row-gap: 12px; */
+}
+
+.form-heading {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 8px;
+  /* max-height: 30px; */
+}
+
+.form-heading h2 {
+  margin: 0;
+  padding: 0;
+  /* margin: 4px 0px; */
+}
+
+.form-heading img {
+  width: 2.5rem;
+}
+
+.progress-container p {
+  margin: 0;
+  padding: 0;
+  margin: 12px 0px;
+  font-size: 0.8rem;
+  /* color: #949494; */
+  color: #858585;
+}
+
+.progress-container .error-label {
+  margin: 0;
+  padding: 0;
+  margin: 16px 0;
+  color: rgb(240, 38, 38);
+  color: #ff5151;
+  visibility: hidden;
+}
+
+.progress-container .progress-bar {
+  height: 30px;
+  border-radius: 16px;
+  background-color: #eeeeee;
+  background-color: rgb(72, 163, 0, 0.1);
+}
+
+.progress-bar .progress {
+  /* width: 33%; */
+  /* background-color: green; */
+  background-color: #48a300;
+  height: 100%;
+  border-radius: inherit;
+  width: 0;
+  display: flex;
+  align-items: center;
+  transition: width 0.3s ease-in-out;
+}
+
+.progress span {
+  font-size: 0.6rem;
+  font-weight: 500;
+  padding-left: 20px;
+  color: #eeefe0;
+  min-width: max-content;
+}
+
+/* .progress-bar::after{
+    content: '';
+    display: block;
+    background-color: green;
+    height: 100%;
+    width: 30%;
+    border-radius: 9px;
+    transition: width 5s ease 2s;
+
+    animation: fillbar 1s ease 0s forwards;
+    width: 0%;
+} */
+
+.goals-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+  /* min-width: 100%; */
+  /* border: 1px solid red; */
+}
+
+.goal {
+  min-width: 100%;
+  display: flex;
+  border: 1px solid rgb(0, 0, 0, 0.1);
+  padding: 16px 0px;
+  border-radius: 12px;
+  /* column-gap: 12px; */
+  background-color: #ffffff;
+  align-items: center;
+}
+.goal input[type="radio"] {
+  margin-left: 16px;
+}
+
+.custom-checkbox {
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  border: 1px solid rgb(0, 0, 0, 0.1);
+  margin-left: 16px;
+  flex-shrink: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.custom-checkbox img {
+  height: 100%;
+  width: 100%;
+  display: none;
+}
+
+.goal input[type="text"] {
+  /* width: 100%; */
+  padding-left: 12px;
+  /* flex-grow: 1; */
+  border: none;
+  outline: none;
+  font-family: inherit;
+  font-size: 1rem;
+  /* background-color: #48a300; */
+  /* align-self: stretch; */
+  /* height: 100%; */
+}
+.goal input[type="text"]::placeholder {
+  color: #d9d9d9;
+}
+
+.form-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* margin: auto 0; */
+}
+
+.form-bottom p:nth-child(1) {
+  font-weight: 700;
+}
+
+.form-bottom p:nth-child(2) {
+  font-size: 0.65rem;
+  margin-top: 32px;
+  color: #a1a1a1;
+}
+
+.form-bottom p:nth-child(2) span {
+  color: red;
+  color: #ff5151;
+  font-size: 1rem;
+}
+
+.completed .custom-checkbox {
+  background-color: #48a300;
+  border: #48a300;
+}
+
+.completed .custom-checkbox img {
+  display: block;
+}
+
+.completed input[type="text"] {
+  font-weight: 500;
+  color: #48a300;
+  text-decoration: line-through;
+}
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+    /* transition: 0.7s ease; */
+  }
+
+  main {
+    padding: 16px 21px;
+  }
+
+  .goal {
+    /* column-gap: 8px; */
+    padding: 10px 0px;
+  }
+
+  .custom-checkbox {
+    height: 12px;
+    width: 12px;
+  }
+
+  .goal input[type="text"]::placeholder {
+    font-size: 12px;
+  }
+
+  .progress-container .progress-bar {
+    height: 20px;
+  }
+}
